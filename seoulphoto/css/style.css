@@ -1,0 +1,67 @@
+@charset "utf-8";
+
+/*전체 설정*/
+*{box-sizing:border-box; margin:auto;}
+html {scroll-behavior:smooth;}
+html,body {font:13pt/160% '나눔고딕'; color:black;}
+
+#layout {max-width:1000px; border:1px solid #ddd;}
+
+img {max-width:100%; }
+	a {display:inline-block;}
+
+	
+	
+/*상단*/
+header {display:flex; border:0px solid red;}
+
+/*로고*/
+.logo {width:160px; flex:1; margin:10px 0 10px 20px;}
+
+/*네비게이션 메뉴*/
+nav {flex:2; margin-top:20px;}
+nav ul {list-style:none; display:flex;}
+nav li {flex:1; padding-left:30px; border-right:1px solid #555;}
+nav li:nth-child(3) {padding-right:10px;}
+nav li:nth-child(5) {border-right:none;}
+nav li a {text-decoration:none; color:black; font-size:1.2rem; font-weight:bold; padding:5px;}
+nav li a:hover {background:black; color:white;}
+
+/*이미지 메인 슬라이드*/
+#slide {position:relative; overflow:hidden;}
+#slide h2 {position:absolute; top:55px; left: 45px; color:white;}
+#slide p {font-size:0.9rem; font-weight:normal;}
+#slide h2 a {color:white; text-decoration:none; font-size:1.2rem; background:#999; padding:5px 30px;  border-radius:25px; margin-top:20px; }
+#mainimg  {width:4000px; display:flex; position:relative; left:-1000px;} /*img 슬라이딩을 위해서는 img의 부모의 넓이가 우선 넓어야 하며 , display:flex;와 position:relative(부모) , absolute(자식) 둘중 하나는 써야 한다.. */
+#mainimg img {width:1000px; height:500px; top:0;}
+
+/*서클 아이콘 이미지*/
+
+#circle {border:0px solid red; position:absolute; top:81%; left:25px; display:inline-block;}
+#circle img:nth-child(1) {width:18%; margin-left:10px; padding-right:5px; display:none;}
+#circle img:nth-child(2) {width:18%; display:none;}
+#circle img:nth-child(3) {width:20%; margin-left:20px;}
+#circle img:nth-child(4) {width:20%;}
+
+/*메인 아이콘*/
+#icm {border:0px solid red; }
+#icm h2 {display:flex; justfy-content:space-evenly;}
+#icm img {width:120px; padding:15px;}
+#icm a:nth-child(1) {width:110px; padding-top:10px;}
+
+/*포트폴리오 프리뷰*/
+.fv p {font-size:2rem; font-weight:bold; margin-top:30px; margin-left:20px;}
+.fv a {margin-bottom:50px; text-decoration:none; color:#555; margin-top:10px; margin-left:20px;}
+.fv> img {padding:15px; margin-bottom:35px;}
+#hr1 { margin-bottom:32px;}
+#hr2 {margin-top:50px; width:95%;} 
+
+/*하단 정보*/
+
+footer {display:flex;}
+footer a img {margin-left:-10px; margin-top:10px; border:0px solid red;}
+footer ul {list-style:none; padding:10px; }
+footer h3> p {font-weight:normal; font-size:0.8rem; color:#777; line-height:130%; margin-top:-10px; padding-left:10px; border:0px solid red;}
+footer ul b {font-size:1.8rem; color:orange; font-weight:normal; }
+footer li p {font-size:0.8rem; color:#777;}
+
