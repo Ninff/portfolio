@@ -66,6 +66,10 @@ $(document).ready(function(){
 		if(st>= homeTop && st < aboutTop){
 			pos = 0;
 		}
+		if( st>= aboutTop ){
+			$("#about").addClass("act");
+			pos = 1;
+		}
 		if( st>= port1Top ){
 			$("#port1").addClass("act");
 			pos = 2;
